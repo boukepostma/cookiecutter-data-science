@@ -10,7 +10,7 @@ base_packages = ["numpy>=1.20.3", "scipy>=1.6.3", "scikit-learn>=0.24.2",
 
 dev_packages = ["pip", "pytest-cov", "pytest", "flake8", "mkdocs>=1.2.1", 
                 "mkdocs-material>=7.1.8", "pre-commit>=2.13.0", "mkdocs-jupyter==0.17.3",
-                "coverage", "awscli"]
+                "coverage", "awscli", "black"]
 
 setup(
     name='src',

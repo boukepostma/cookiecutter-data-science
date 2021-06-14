@@ -76,19 +76,19 @@ TODO: Give a short introduction of your project. Let this section explain the ob
 Set up a virtual environment via:
 
 ```bash
-$ make python_environment
+python -m venv venv
 ```
 
 Activate the virtual environment:
 
 ```bash
-$ source ./venv/Scripts/activate
+source ./venv/Scripts/activate
 ```
 
 Then install the project and required packages in the activated virtual environment via:
 
 ```bash
-$ python -m pip install -U pip setuptools wheel
-$ python -m pip install -e ".[dev]"
-$ pre-commit install
+python -m pip install -U pip setuptools wheel
+python -m pip install -e ".[dev]"
+pre-commit install
 ```

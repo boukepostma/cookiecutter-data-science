@@ -6,7 +6,7 @@ def read(fname):
 
 base_packages = ["numpy>=1.20.3", "scipy>=1.6.3", "scikit-learn>=0.24.2",
                  "pandas>=1.2.4", "plotly-express>=0.4.1", "jupyter>=1.0.0", 
-                 "tqdm>=4.61.1", "click>=8.0", "fastapi>=0.65.2", 'Sphinx']
+                 "tqdm>=4.61.1", "click>=8.0", "fastapi>=0.65.2", "Sphinx", "rich"]
 
 dev_packages = ["pip", "pytest-cov", "pytest", "flake8", "mkdocs>=1.2.1", 
                 "mkdocs-material>=7.1.8", "pre-commit>=2.13.0", "mkdocs-jupyter==0.17.3",

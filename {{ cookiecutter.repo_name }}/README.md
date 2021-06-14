@@ -57,8 +57,15 @@ Project Organization
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
 ## Installation
-Install `{{ cookiecutter.repo_name }}` via:
+
+Set up a virtual environment via:
 
 ```bash
-$ make develop
+$ make python_environment
+```
+
+Then install `{{ cookiecutter.repo_name }}` in the activated virtual environment via:
+
+```bash
+$ make development_environment
 ```

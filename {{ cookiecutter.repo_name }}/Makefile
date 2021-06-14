@@ -1,4 +1,4 @@
-.PHONY: clean data flake requirements create_environment test check
+.PHONY: clean data flake requirements python_environment test check development_environment
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -12,7 +12,7 @@ PROJECT_NAME = {{ cookiecutter.repo_name }}
 #################################################################################
 
 ## Set up python interpreter environment
-create_environment:
+python_environment:
 	python -m venv venv
 	@echo ">>> New virtualenv created. Activate with cmd: venv\Scripts\activate.bat"
 	@echo ">>> or bash: source  ./venv/Scripts/activate"
@@ -47,8 +47,7 @@ test:
 
 check: flake test clean
 
-develop: create_environment
-	source ./venv/Scripts/activate
+development_environment: 	
 	requirements
 	pre-commit install
 

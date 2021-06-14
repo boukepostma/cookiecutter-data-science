@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements 
+.PHONY: clean data flake requirements create_environment test check
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -11,10 +11,16 @@ PROJECT_NAME = {{ cookiecutter.repo_name }}
 # COMMANDS                                                                      #
 #################################################################################
 
+## Set up python interpreter environment
+create_environment:
+	python -m venv venv
+	@echo ">>> New virtualenv created. Activate with cmd: venv\Scripts\activate.bat"
+	@echo ">>> or bash: source  ./venv/Scripts/activate"
+
 ## Install Python Dependencies
 requirements: 
 	python -m pip install -U pip setuptools wheel
-	python -m pip install -r requirements.txt
+	python -m pip install -e ".[dev]"
 
 ## Make Dataset
 data: requirements
@@ -24,15 +30,28 @@ data: requirements
 clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
+	rm -rf .pytest_cache
+	rm -rf build
+	rm -rf dist
+	rm -rf scikit_lego.egg-info
+	rm -rf .ipynb_checkpoints
+	rm -rf notebooks/.ipynb_checkpoints
 
 ## Lint using flake8
-lint:
+flake:
 	flake8 src
+	flake8 tests
 
-## Set up python interpreter environment
-create_environment:
-	python -m venv venv
-	@echo ">>> New virtualenv created. Activate with: venv\Scripts\activate.bat"
+test:
+	pytest --cov={{cookiecutter.python_module_name}}
+
+check: flake test clean
+
+develop: create_environment
+	source ./venv/Scripts/activate
+	requirements
+	pre-commit install
+
 
 #################################################################################
 # PROJECT RULES                                                                 #

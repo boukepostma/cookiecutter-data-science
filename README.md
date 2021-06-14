@@ -1,14 +1,10 @@
-# Cookiecutter Data Science
-
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
-
-
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+# Cookiecutter 
+#### [Forked from](http://drivendata.github.io/cookiecutter-data-science/)
 
 
 ### Requirements to use the cookiecutter template:
 -----------
- - Python 2.7 or 3.5+
+ - Python 3.5+
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
@@ -22,24 +18,10 @@ $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
-
 ### To start a new project, run:
 ------------
 
     cookiecutter https://github.com/boukepostma/cookiecutter-data-science.git
-
-
-[![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
-
-### New version of Cookiecutter Data Science
-------------
-Cookiecutter data science is moving to v2 soon, which will entail using
-the command `ccds ...` rather than `cookiecutter ...`. The cookiecutter command
-will continue to work, and this version of the template will still be available.
-To use the legacy template, you will need to explicitly use `-c v1` to select it.
-Please update any scripts/automation you have to append the `-c v1` option (as above),
-which is available now.
-
 
 ### The resulting directory structure
 ------------
@@ -50,6 +32,14 @@ The directory structure of your new project looks like this:
 ├── LICENSE
 ├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
+├── main.py            <- Script to run the entire pipeline
+│
+├── configurations
+│   ├── __init__.py    <- Makes configurations a Python module
+│   ├── names.py       <- Globally defined column names (e.g. of output dataframes)
+│   ├── parameters.py  <- Globally defined parameters used in src 
+│   └── paths.py       <- Globally defined folder and file paths 
+│
 ├── data
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
@@ -57,6 +47,8 @@ The directory structure of your new project looks like this:
 │   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── logger.py          <- Definition of logger
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -68,9 +60,6 @@ The directory structure of your new project looks like this:
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
 ├── src                <- Source code for use in this project.
@@ -90,12 +79,14 @@ The directory structure of your new project looks like this:
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
 │       └── visualize.py
 │
-└── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+├── tests
+│   ├── __init.py__    <- Makes tests a Python module
+│   └── test_basic.py  <- Basic pytest test
+│
+├── .flake8            <- flake8 settings
+├── .gitignore         <- files to be ignored by git 
+└── .pre-commit-config.yaml <- pre-commit hooks
 ```
-
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
 
 ### Installing development requirements
 ------------

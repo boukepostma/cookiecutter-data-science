@@ -17,7 +17,7 @@ FOLDER_DATA_PROCESSED = os.sep.join([FOLDER_DATA,'processed'])
 
 FOLDER_FIGURES = os.sep.join([FOLDER_REPORTS, 'figures'])
 
-## FILE PATHS: Paths to files (.csv, .xlsx), databases (.db, .sqlite) and their respective table names  ##
+# FILE PATHS: Paths to files (.csv, .xlsx), databases (.db, .sqlite) and their respective table names
 # Raw data
 FILE_PATH_EXAMPLE = os.sep.join([FOLDER_DATA_RAW, 'example.xlsx'])
 

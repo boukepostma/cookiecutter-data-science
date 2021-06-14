@@ -1,4 +1,4 @@
-## COLUMN NAMES ##
+# COLUMN NAMES
 # Input data column names
 WEEK = 'week'
 MONTH = 'month'

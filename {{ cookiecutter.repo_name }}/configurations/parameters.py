@@ -1,1 +1,1 @@
-## Parameters used to run main.py
+# Parameters used to run main.py

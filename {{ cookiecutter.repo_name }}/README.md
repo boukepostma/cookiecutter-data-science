@@ -67,11 +67,12 @@ Project Organization
 
 
 --------
-
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
-
 ## Installation
+First set the project folder as working directory and set up git using the following command
+
+```bash
+git init
+```
 
 Set up a virtual environment via:
 

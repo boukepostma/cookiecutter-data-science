@@ -43,7 +43,7 @@ flake:
 	flake8 tests
 
 test:
-	pytest --cov={{cookiecutter.python_module_name}}
+	pytest --cov=src
 
 check: flake test clean
 

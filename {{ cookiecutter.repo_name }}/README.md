@@ -79,8 +79,16 @@ Set up a virtual environment via:
 $ make python_environment
 ```
 
-Then install `{{ cookiecutter.repo_name }}` in the activated virtual environment via:
+Activate the virtual environment:
 
 ```bash
-$ make development_environment
+$ source ./venv/Scripts/activate
+```
+
+Then install the project and required packages in the activated virtual environment via:
+
+```bash
+$ python -m pip install -U pip setuptools wheel
+$ python -m pip install -e ".[dev]"
+$ pre-commit install
 ```

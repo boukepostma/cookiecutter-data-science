@@ -57,7 +57,7 @@ Project Organization
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
 ## Installation
-Install `{{ cookiecutter.python_repo_name }}` via:
+Install `{{ cookiecutter.repo_name }}` via:
 
 ```bash
 $ make develop

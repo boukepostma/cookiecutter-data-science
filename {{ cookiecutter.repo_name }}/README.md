@@ -68,7 +68,7 @@ Project Organization
 
 --------
 ## Installation
-First set the project folder as working directory and set up git using the following command
+With the project folder as current working directory, set up git using the following command:
 
 ```bash
 git init

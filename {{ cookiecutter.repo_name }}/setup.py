@@ -16,7 +16,6 @@ base_packages = [
     "tqdm>=4.61.1",
     "click>=8.0",
     "fastapi>=0.65.2",
-    "Sphinx",
     "rich",
 ]
 
@@ -25,13 +24,17 @@ dev_packages = [
     "pytest-cov",
     "pytest",
     "flake8",
-    "mkdocs>=1.2.1",
-    "mkdocs-material>=7.1.8",
+    # "mkdocs>=1.2.1",
+    # "mkdocs-material>=7.1.8",
+    # "mkdocs-jupyter==0.17.3",
+    "sphinx",
+    "nbsphinx",
+    "furo",
     "pre-commit>=2.13.0",
-    "mkdocs-jupyter==0.17.3",
     "coverage",
     "awscli",
     "black",
+    "isort"
 ]
 
 setup(

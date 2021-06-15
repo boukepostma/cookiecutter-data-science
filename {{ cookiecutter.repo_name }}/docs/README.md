@@ -14,6 +14,7 @@ With the **project folder** as current working directory, activate the environme
 
 ```cmd
 venv\Scripts\activate.bat
+rmdir /s /Q docs\_build
 cd docs
 make.bat html
 ```
@@ -21,6 +22,7 @@ make.bat html
 ### Linux:
 ```bash
 source ./venv/Scripts/activate
+rm -rf docs/_build
 cd docs
 make html
 ```
@@ -31,7 +33,8 @@ With the **project folder** as current working directory, activate the environme
 
 ```cmd
 venv\Scripts\activate.bat
-sphinx-apidoc -f -o docs\api . 
+rmdir /s /Q docs\_build docs\api 
+sphinx-apidoc -f -o docs\api . setup.py
 cd docs
 make.bat html
 ```
@@ -39,7 +42,8 @@ make.bat html
 ### Linux:
 ```bash
 source ./venv/Scripts/activate
-sphinx-apidoc -f -o docs/api . 
+rm -rf docs/_build docs/api 
+sphinx-apidoc -f -o docs/api . setup.py
 cd docs
 make html
 ```

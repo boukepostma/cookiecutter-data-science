@@ -30,6 +30,7 @@ dev_packages = [
     "sphinx",
     "nbsphinx",
     "furo",
+    "myst-parser"
     "pre-commit>=2.13.0",
     "coverage",
     "awscli",
@@ -42,7 +43,7 @@ setup(
     version="0.0.1",
     packages=find_packages(exclude=["data", "notebooks"]),
     description="{{ cookiecutter.description }}",
-    long_description=read("readme.md"),
+    long_description=read("README.md"),
     install_requires=base_packages,
     author="{{ cookiecutter.author_name }}",
     extras_require={"dev": dev_packages},

@@ -1,7 +1,7 @@
 import os
 
 # Data_root_path
-FOLDER_ROOT = os.get_cwd()
+FOLDER_ROOT = os.getcwd()
 
 FOLDER_DATA = os.sep.join([FOLDER_ROOT, "data"])
 FOLDER_MODELS = os.sep.join([FOLDER_ROOT, "models"])

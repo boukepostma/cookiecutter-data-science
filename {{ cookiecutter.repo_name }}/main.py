@@ -3,7 +3,7 @@ Main script of the project to run the entire pipeline. Example of docstring in G
 """
 
 
-def main():
+def main(arg:bool=True) -> bool:
     """Summary line.
 
     Extended description of function.
@@ -15,7 +15,7 @@ def main():
     Returns:
         bool: Description of return value
     """
-    return True
+    return arg
 
 
 if __name__ == "main":

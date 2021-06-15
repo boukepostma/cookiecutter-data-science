@@ -37,23 +37,6 @@
         <![endif]-->
 
     
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-54096005-4', 'auto');
-    ga('send', 'pageview');
-    </script>
-    
 
      
 </head>
@@ -77,7 +60,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href=".">Cookiecutter Data Science</a>
+              <a class="navbar-brand" href="index.html">Cookiecutter Data Science</a>
             
         </div>
 
@@ -91,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/drivendata/cookiecutter-data-science/edit/master/docs/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/boukepostma/cookiecutter-data-science/edit/master/docs/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -120,7 +103,7 @@
                 
                 <li class="third-level"><a href="#data-is-immutable">Data is immutable</a></li>
                 <li class="third-level"><a href="#notebooks-are-for-exploration-and-communication">Notebooks are for exploration and communication</a></li>
-                <li class="third-level"><a href="#analysis-is-a-dag">Analysis is a DAG</a></li>
+                <li class="third-level"><a href="#analysis-is-a-directed-acyclic-graph-dag">Analysis is a directed acyclic graph (DAG)</a></li>
                 <li class="third-level"><a href="#build-from-the-environment-up">Build from the environment up</a></li>
                 <li class="third-level"><a href="#keep-secrets-and-configuration-out-of-version-control">Keep secrets and configuration out of version control</a></li>
                 <li class="third-level"><a href="#be-conservative-in-changing-the-default-folder-structure">Be conservative in changing the default folder structure</a></li>
@@ -258,7 +241,7 @@
 
 from src.data import make_dataset
 </code></pre>
-<h3 id="analysis-is-a-dag">Analysis is a DAG</h3>
+<h3 id="analysis-is-a-directed-acyclic-graph-dag">Analysis is a directed acyclic graph (<a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a>)</h3>
 <p>Often in an analysis you have long-running steps that preprocess data or train models. If these steps have been run already (and you have stored the output somewhere like the <code>data/interim</code> directory), you don't want to wait to rerun them every time. We prefer <a href="https://www.gnu.org/software/make/"><code>make</code></a> for managing steps that depend on each other, especially the long-running ones. Make is a common tool on Unix-based platforms (and <a href="">is available for Windows</a>). Following the <a href="https://www.gnu.org/software/make/"><code>make</code> documentation</a>, <a href="https://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html#Makefile-Conventions">Makefile conventions</a>, and <a href="http://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/Portable-Make.html#Portable-Make">portability guide</a> will help ensure your Makefiles work effectively across systems. Here are <a href="http://zmjones.com/make/">some</a> <a href="http://blog.kaggle.com/2012/10/15/make-for-data-scientists/">examples</a> to <a href="https://web.archive.org/web/20150206054212/http://www.bioinformaticszen.com/post/decomplected-workflows-makefiles/">get started</a>. A number of data folks use <code>make</code> as their tool of choice, including <a href="https://bost.ocks.org/mike/make/">Mike Bostock</a>.</p>
 <p>There are other tools for managing DAGs that are written in Python instead of a DSL (e.g., <a href="http://paver.github.io/paver/#">Paver</a>, <a href="http://luigi.readthedocs.org/en/stable/index.html">Luigi</a>, <a href="https://airflow.apache.org/index.html">Airflow</a>, <a href="https://snakemake.readthedocs.io/en/stable/">Snakemake</a>, <a href="http://www.ruffus.org.uk/">Ruffus</a>, or <a href="https://pythonhosted.org/joblib/memory.html">Joblib</a>). Feel free to use these if they are more appropriate for your analysis.</p>
 <h3 id="build-from-the-environment-up">Build from the environment up</h3>
@@ -427,6 +410,6 @@ aws_secret_access_key=myprojectsecretkey
 </html>
 
 <!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-12-22 18:46:37.158505+00:00
+MkDocs version : 1.2.1
+Build Date UTC : 2021-06-15 15:30:04.146463+00:00
 -->

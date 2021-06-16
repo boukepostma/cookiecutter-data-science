@@ -1,0 +1,23 @@
+site_name: {{cookiecutter.project_name}}
+nav:
+  - Home: /
+  - Readme: ../../README.md
+  - Quickstart: 01-quickstart.ipynb
+plugins:
+  - search
+  - mkdocstrings
+  - mkdocs-jupyter
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+theme:
+  name: material
+  palette:
+    primary: white
+    accent: purple
+markdown_extensions:
+  - pymdownx.arithmatex
+  - footnotes
+  - codehilite:
+      linenums: true
+# repo_url: https://github.com/boukepostma/cookiecutter-data-science
+# edit_uri: edit/master/docs/docs

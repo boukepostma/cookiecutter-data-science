@@ -68,25 +68,33 @@ Project Organization
 
 --------
 ## Installation
-With the project folder as current working directory, set up git using the following command:
+#### With the project folder as current working directory, set up git using the following command:
 
 ```bash
 git init
 ```
 
-Set up a virtual environment via:
+#### Set up a virtual environment via:
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment:
+### Activate the virtual environment:
+
+#### Windows
+
+```cmd
+venv\Scripts\activate.bat
+```
+
+#### Linux / bash
 
 ```bash
 source ./venv/Scripts/activate
 ```
 
-Then install the project and required packages in the activated virtual environment via:
+### Install the project and required packages in the activated virtual environment via:
 
 ```bash
 python -m pip install -U pip setuptools wheel
@@ -94,18 +102,9 @@ python -m pip install -e ".[dev]"
 pre-commit install
 ```
 
+## Generating the docs
 
-Generating the docs
-----------
-
-Install requirements:
-
-    pip install -r requirements.txt
-
-Change directories into the docs folder:
-
-    cd docs
-
+#### With the **project folder** as current working directory, and an **activated environment**:
 Use [mkdocs](http://www.mkdocs.org/) structure to update the documentation. Test locally with:
 
     mkdocs serve
@@ -115,20 +114,3 @@ Once the docs look good, publish to `gh-pages` branch with:
     mkdocs gh-deploy --clean
 
 ** Note **: Never edit the generated site by hand because using `gh-deploy` blows away the `gh-pages` branch and you'll lose your edits.
-
-
-## Creating the first documentation
-
-With the **project folder** as current working directory, activate the environment and create the first documentation by running the following command:
-### Windows:
-
-```cmd
-venv\Scripts\activate.bat
-mkdocs serve
-```
-
-### Linux:
-```bash
-source ./venv/Scripts/activate
-mkdocs serve
-```

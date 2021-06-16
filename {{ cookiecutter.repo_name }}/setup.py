@@ -34,7 +34,7 @@ dev_packages = [
     "coverage",
     "awscli",
     "black",
-    "isort"
+    "isort",
 ]
 
 setup(

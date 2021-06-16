@@ -1,11 +1,14 @@
 site_name: {{cookiecutter.project_name}}
 nav:
   - Home: /
-  - Readme: ../../README.md
-  - Quickstart: 01-quickstart.ipynb
+  - Documentation:
+    - Quickstart: docs/01-quickstart.ipynb
+  - Reference: reference.md
 plugins:
   - search
-  - mkdocstrings
+  - mkdocstrings:
+      watch:
+        - src
   - mkdocs-jupyter
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

@@ -1,0 +1,14 @@
+site_name: {{cookiecutter.project_name}}
+nav:
+  - Home: /
+  - Readme: ../../README.md
+  - Quickstart: 01-quickstart.ipynb
+plugins:
+  - mkdocs-jupyter
+theme:
+  name: material
+  palette:
+    primary: white
+    accent: purple
+# repo_url: https://github.com/drivendata/cookiecutter-data-science
+# edit_uri: edit/master/docs/docs

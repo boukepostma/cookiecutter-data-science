@@ -3,14 +3,13 @@ Main script of the project to run the entire pipeline. Example of docstring in G
 """
 
 
-def main(arg:bool=True) -> bool:
+def main(arg: bool = True) -> bool:
     """Summary line.
 
     Extended description of function.
 
     Args:
-        arg1 (int): Description of arg1
-        arg2 (str): Description of arg2
+        arg (bool): Description of arg
 
     Returns:
         bool: Description of return value

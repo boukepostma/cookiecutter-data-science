@@ -23,6 +23,9 @@ $ conda install cookiecutter
 
     cookiecutter https://github.com/boukepostma/cookiecutter-data-science.git
 
+... and follow the instructions in the new project directory's README.md file.
+
+
 ### The resulting directory structure
 ------------
 

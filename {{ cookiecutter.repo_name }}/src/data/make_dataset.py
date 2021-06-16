@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from logger import logger
 from pathlib import Path
+
+from logger import logger
 
 
 def main(input_filepath: str, output_filepath: str) -> bool:

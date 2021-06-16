@@ -33,7 +33,6 @@ The directory structure of your new project looks like this:
 
 ```
 ├── LICENSE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── main.py            <- Script to run the entire pipeline
 │
@@ -49,7 +48,7 @@ The directory structure of your new project looks like this:
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+├── docs               <- A simple mkdocs project; see mkdocs.org for details
 │
 ├── logger.py          <- Definition of logger
 │

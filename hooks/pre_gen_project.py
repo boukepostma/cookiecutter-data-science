@@ -1,6 +1,5 @@
 import os
 
-
 def deprecation_warning():
     print(
         """
@@ -22,8 +21,6 @@ For example:
 
     """
     )
-
-
 deprecation_warning()
 
 url = "{{cookiecutter.repo_url}}"

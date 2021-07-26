@@ -1,5 +1,5 @@
-@echo Initializing git repository..
-git init
+@echo First commit
+git add -A && git commit -m "Initial commit"
 
 @echo Setting up python3 virtual environment (venv)...
 python -m venv venv

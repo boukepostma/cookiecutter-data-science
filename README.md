@@ -24,7 +24,12 @@ conda install cookiecutter
     cookiecutter https://github.com/boukepostma/cookiecutter-data-science.git
 
 This executes the following steps:
-1. Prompt to ask for parameters to set up the project (such as project name, authors, etc.) 
+1. Prompt to ask for parameters to set up the project:
+    * repo_url: A https url used to clone the git repository. Leave empty when the project does not have a repository yet.
+    * project_name: The name of the project
+    * repo_name: A machine-friendly name of the project
+    * author_name: The name(s) of the author(s)
+    * description: A brief description of the project.
 2. Initialize the project repository given responses in previous step
 3. Initialize a git repository
 4. Initialize a python virtual environment (venv)

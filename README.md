@@ -7,23 +7,28 @@
  - Python 3.5+
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
-``` bash
-$ pip install cookiecutter
+``` 
+pip install cookiecutter
 ```
 
 or
 
-``` bash
-$ conda config --add channels conda-forge
-$ conda install cookiecutter
+``` 
+conda config --add channels conda-forge
+conda install cookiecutter
 ```
 
-### To start a new project, run:
+### To start a new project, run the following in **COMMAND PROMPT**:
 ------------
 
     cookiecutter https://github.com/boukepostma/cookiecutter-data-science.git
 
-... and follow the instructions in the new project directory's README.md file.
+This executes the following steps:
+1. Prompt to ask for parameters to set up the project (such as project name, authors, etc.) 
+2. Initialize the project repository given responses in previous step
+3. Initialize a git repository
+4. Initialize a python virtual environment (venv)
+5. Activate the python environment, update pip and install all recommended packages
 
 
 ### The resulting directory structure

@@ -67,12 +67,6 @@ Project Organization
 
 --------
 ## Installation
-#### With the project folder as current working directory, set up git using the following command:
-
-```bash
-git init
-```
-
 #### Set up a virtual environment via:
 
 ```bash

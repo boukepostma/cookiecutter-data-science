@@ -1,3 +1,7 @@
+''' 
+See this short series of videos for an introduction on logging: https://calmcode.io/logging/introduction.html
+'''
+
 import logging
 
 from rich.logging import RichHandler

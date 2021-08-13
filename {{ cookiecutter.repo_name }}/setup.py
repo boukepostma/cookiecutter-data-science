@@ -18,6 +18,7 @@ base_packages = [
     "click>=8.0",
     "fastapi>=0.65.2",
     "rich",
+    "openpyxl",
 ]
 
 dev_packages = [

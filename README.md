@@ -25,13 +25,13 @@ conda install cookiecutter
 
 This executes the following steps:
 1. Prompt to ask for parameters to set up the project:
-    * repo_url: A https url used to clone the git repository. Leave empty when the project does not have a repository yet.
+    * repo_url: A https url of an empty, initialized git repository in Azure Devops. Leave empty when the project does not have a repository yet
     * project_name: The name of the project
     * repo_name: A machine-friendly name of the project
     * author_name: The name(s) of the author(s)
-    * description: A brief description of the project.
-2. Initialize the project repository given responses in previous step
-3. Initialize a git repository
+    * description: A brief description of the project
+2. Initialize the project repository given the responses in previous step. If a repo url was given, clone repo, else initialize new repo
+3. Commit changes
 4. Initialize a python virtual environment (venv)
 5. Activate the python environment, update pip and install all recommended packages
 
@@ -109,3 +109,6 @@ The directory structure of your new project looks like this:
 ------------
 
     py.test tests
+
+### TO DO LIST:
+* Add option to choose 'conda' vs 'venv' virtual environment (raise error when 'conda' is chosen if the cookiecutter was not initiated in bash).

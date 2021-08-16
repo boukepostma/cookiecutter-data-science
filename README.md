@@ -111,4 +111,6 @@ The directory structure of your new project looks like this:
     py.test tests
 
 ### TO DO LIST:
-* Add option to choose 'conda' vs 'venv' virtual environment (raise error when 'conda' is chosen if the cookiecutter was not initiated in bash).
+* Use conda virtual environment (raise error if the cookiecutter was not initiated in (git) bash). 
+* Implement Poetry
+* Use hardcoded path instead of `FOLDER_ROOT = os.getcwd()` to circumvent notebooks bug in vscode

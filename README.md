@@ -113,4 +113,3 @@ The directory structure of your new project looks like this:
 ### TO DO LIST:
 * Use conda virtual environment (raise error if the cookiecutter was not initiated in (git) bash). 
 * Implement Poetry
-* Use hardcoded path instead of `FOLDER_ROOT = os.getcwd()` to circumvent notebooks bug in vscode

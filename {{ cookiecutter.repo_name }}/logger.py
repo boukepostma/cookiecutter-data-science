@@ -1,6 +1,6 @@
-''' 
+""" 
 See this short series of videos for an introduction on logging: https://calmcode.io/logging/introduction.html
-'''
+"""
 
 import logging
 
@@ -13,7 +13,7 @@ shell_handler = RichHandler()
 
 # the formatter determines what our logs will look like
 fmt_shell = (
-    "%(levelname)s %(asctime)s [%(filename)s:%(funcName)s:%(lineno)d] %(message)s"
+    "%(asctime)s [%(filename)s:%(funcName)s:%(lineno)d] %(message)s"
 )
 formatter = logging.Formatter(fmt_shell)
 shell_handler.setFormatter(formatter)

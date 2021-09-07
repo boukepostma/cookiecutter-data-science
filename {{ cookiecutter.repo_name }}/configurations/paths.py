@@ -19,7 +19,7 @@ FOLDER_FIGURES = FOLDER_REPORTS / "figures"
 
 # FILE PATHS: Paths to files (.csv, .xlsx), databases (.db, .sqlite) and their respective table names
 # Raw data
-FILE_PATH_EXAMPLE =  FOLDER_DATA_RAW / "example.xlsx"
+FILE_PATH_EXAMPLE = FOLDER_DATA_RAW / "example.xlsx"
 
 # External data
 

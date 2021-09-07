@@ -20,4 +20,4 @@ def main(input_filepath: str, output_filepath: str) -> bool:
 
 
 if __name__ == "__main__":
-    main('fake/file/path','other_fake/file/path')
+    main('fake/file/path', 'other_fake/file/path')

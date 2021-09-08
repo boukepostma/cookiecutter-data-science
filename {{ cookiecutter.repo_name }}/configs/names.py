@@ -1,8 +1,8 @@
-''' 
+"""
 To use these configurations, use anywhere: 
 from configurations import names 
 print(names.X)
-'''
+"""
 
 # COLUMN NAMES
 # Input data column names

@@ -6,11 +6,10 @@
 Project Organization
 ------------
 ```
-├── LICENSE
 ├── README.md          <- The top-level README for developers using this project.
 ├── main.py            <- Script to run the entire pipeline
 │
-├── configurations
+├── configs
 │   ├── __init__.py    <- Makes configurations a Python module
 │   ├── names.py       <- Globally defined column names (e.g. of output dataframes)
 │   ├── parameters.py  <- Globally defined parameters used in src 
@@ -22,15 +21,15 @@ Project Organization
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A simple mkdocs project; see mkdocs.org for details
+├── logs               <- A folder containing .log files
 │
 ├── logger.py          <- Definition of logger
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks. Naming convention is: the creator's initials,
+│                         a number (for ordering), and a short `-` delimited description, e.g.
+│                         `jqp-1.0-initial-data-exploration`.
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -38,6 +37,7 @@ Project Organization
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
 ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+|
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
@@ -94,19 +94,6 @@ python -m pip install -U pip setuptools wheel
 python -m pip install -e ".[dev]"
 pre-commit install
 ```
-
-## Generating the docs
-
-#### With the **project folder** as current working directory, and an **activated environment**:
-Use [mkdocs](http://www.mkdocs.org/) structure to update the documentation. Test locally with:
-
-    mkdocs serve
-
-Once the docs look good, publish to `gh-pages` branch with:
-
-    mkdocs gh-deploy --clean
-
-** Note **: Never edit the generated site by hand because using `gh-deploy` blows away the `gh-pages` branch and you'll lose your edits.
 
 ## Base Example
 Base example of how to use this project.

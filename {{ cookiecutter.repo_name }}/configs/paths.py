@@ -1,6 +1,12 @@
+"""
+Example to use these configurations: 
+from configurations import paths 
+print(paths.FOLDER_ROOT)
+"""
+
 from pathlib import Path
 
-# Repository root path
+# Repository root path. Note that this line will not work when copy-pasted into a terminal / notebook. 
 FOLDER_ROOT = Path(__file__).resolve().parents[1]
 
 FOLDER_DATA = FOLDER_ROOT / "data"

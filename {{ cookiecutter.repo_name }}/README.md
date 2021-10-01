@@ -69,27 +69,19 @@ Project Organization
 ## Installation
 #### Set up a virtual environment via:
 
-```bash
+```
 python -m venv venv
 ```
 
 ### Activate the virtual environment:
 
-#### Windows
-
 ```cmd
 venv\Scripts\activate.bat
 ```
 
-#### Linux / bash
-
-```bash
-source ./venv/Scripts/activate
-```
-
 ### Install the project and required packages in the activated virtual environment via:
 
-```bash
+```
 python -m pip install -U pip setuptools wheel
 python -m pip install -e ".[dev]"
 pre-commit install

@@ -1,7 +1,7 @@
 """
-To use these configurations, use anywhere: 
+Example to use these configurations: 
 from configurations import names 
-print(names.X)
+print(names.WEEK)
 """
 
 # COLUMN NAMES

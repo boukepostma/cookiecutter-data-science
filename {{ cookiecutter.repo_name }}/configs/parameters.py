@@ -1,7 +1,8 @@
 """
-To use these configurations, use anywhere: 
+Example to use these configurations: 
 from configurations import parameters 
-print(parameter.X)
+print(parameters.MAX_ITERATIONS)
 """
 
-# Parameters used to run main.py
+# Parameters used to run main.py. Example:
+MAX_ITERATIONS = 10

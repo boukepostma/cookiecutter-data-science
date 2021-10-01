@@ -124,3 +124,6 @@ target/
 *.lock
 *.dirlock
 dask-worker-space/
+
+# poetry
+!poetry.lock

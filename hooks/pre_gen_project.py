@@ -26,5 +26,4 @@ deprecation_warning()
 url = "{{cookiecutter.repo_url}}"
 if url:
     os.system(f"git clone {url} .")
-else:
-    os.system("git init")
+os.system("git init")

@@ -70,13 +70,13 @@ Project Organization
 #### Set up a virtual environment via:
 
 ```
-python -m venv venv
+conda env create --prefix env --file environment.yml
 ```
 
 ### Activate the virtual environment:
 
-```cmd
-venv\Scripts\activate.bat
+```
+conda activate ./env
 ```
 
 ### Install the project and required packages in the activated virtual environment via:

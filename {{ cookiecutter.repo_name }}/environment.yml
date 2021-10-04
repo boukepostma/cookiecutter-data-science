@@ -1,0 +1,11 @@
+name: {{cookiecutter.repo_name}}
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - ipython>=7.27.0
+  - ipykernel>=6.4.1
+  - pystan=2.18.0
+  - fbprophet=0.7.1
+  - sktime>=0.8.0

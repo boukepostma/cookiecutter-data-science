@@ -111,5 +111,4 @@ The directory structure of your new project looks like this:
     py.test tests
 
 ### TO DO LIST:
-* Use conda virtual environment (raise error if the cookiecutter was not initiated in (git) bash). 
 * Implement Poetry

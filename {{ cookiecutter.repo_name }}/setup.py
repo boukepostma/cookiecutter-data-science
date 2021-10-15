@@ -19,24 +19,20 @@ base_packages = [
     "openpyxl",
     "ipython>=7.27.0",
     "ipykernel>=6.4.1",
-    "pystan==2.18",
-    "fbprophet==0.7.1",
-    "sktime>=0.8.0",
+    "sktime==0.8.0",
     "pmdarima",
     "seaborn",
-]
+    {%- if cookiecutter.prophet == "True" %}
+    "pystan==2.19.1.1",
+    "fbprophet==0.7.1", 
+    {%- endif %}
+] 
 
 dev_packages = [
     "pip",
     "pytest-cov",
     "pytest",
     "flake8",
-    # "mkdocs>=1.2.1",
-    # "mkdocs-material>=7.1.8",
-    # "mkdocs-jupyter==0.17.3",
-    # "mkdocstrings",
-    # "pygments",
-    # "pymdown-extensions",
     "pre-commit>=2.13.0",
     "coverage",
     "awscli",

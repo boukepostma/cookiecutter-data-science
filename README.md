@@ -32,8 +32,8 @@ This executes the following steps:
     * description: A brief description of the project
 2. Initialize the project repository given the responses in previous step. If a repo url was given, clone repo, else initialize new repo
 3. Commit changes
-4. Initialize a python virtual environment (venv)
-5. Activate the python environment, update pip and install all recommended packages
+<!-- (CURRENTLY) DISABLED 4. Initialize a python virtual environment
+5. Activate the python environment, update pip and install all recommended packages -->
 
 
 ### The resulting directory structure
@@ -42,11 +42,10 @@ This executes the following steps:
 The directory structure of your new project looks like this: 
 
 ```
-├── LICENSE
 ├── README.md          <- The top-level README for developers using this project.
 ├── main.py            <- Script to run the entire pipeline
 │
-├── configurations
+├── configs
 │   ├── __init__.py    <- Makes configurations a Python module
 │   ├── names.py       <- Globally defined column names (e.g. of output dataframes)
 │   ├── parameters.py  <- Globally defined parameters used in src 
@@ -58,15 +57,15 @@ The directory structure of your new project looks like this:
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A simple mkdocs project; see mkdocs.org for details
+├── logs               <- A folder containing .log files
 │
 ├── logger.py          <- Definition of logger
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks. Naming convention is: the creator's initials,
+│                         a number (for ordering), and a short `-` delimited description, e.g.
+│                         `jqp-1.0-initial-data-exploration`.
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -74,6 +73,7 @@ The directory structure of your new project looks like this:
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
 ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+|
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │

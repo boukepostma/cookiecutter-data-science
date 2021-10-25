@@ -30,10 +30,8 @@ This executes the following steps:
     * repo_name: A machine-friendly name of the project
     * author_name: The name(s) of the author(s)
     * description: A brief description of the project
-2. Initialize the project repository given the responses in previous step. If a repo url was given, clone repo, else initialize new repo
+2. Initialize the project repository given the responses in previous step. If a repo url was given, clone repo, else initialize new repo locally
 3. Commit changes
-<!-- (CURRENTLY) DISABLED 4. Initialize a python virtual environment
-5. Activate the python environment, update pip and install all recommended packages -->
 
 
 ### The resulting directory structure
@@ -110,5 +108,5 @@ The directory structure of your new project looks like this:
 
     py.test tests
 
-### TO DO LIST:
+### TO DO LIST / IDEAS:
 * Implement Poetry

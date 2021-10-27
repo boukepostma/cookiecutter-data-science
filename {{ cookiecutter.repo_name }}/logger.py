@@ -1,5 +1,10 @@
 """
 See this short series of videos for an introduction on logging: https://calmcode.io/logging/introduction.html
+
+To use this logger, check out the following example: 
+
+from logger import logger
+logger.debug("some log statement")
 """
 
 import logging

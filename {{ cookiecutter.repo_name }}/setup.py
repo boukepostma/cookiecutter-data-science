@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-
+# Here all dependencies that are required to run the package should be included  
 base_packages = [
     "numpy>=1.20.3",
     "scipy>=1.6.3",
@@ -28,6 +28,7 @@ base_packages = [
     {%- endif %}
 ] 
 
+# Here all dependencies that are required to develop the package should be included
 dev_packages = [
     "pip",
     "pytest-cov",

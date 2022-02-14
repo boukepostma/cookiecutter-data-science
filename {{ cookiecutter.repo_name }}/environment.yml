@@ -3,11 +3,4 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8
-  - ipython>=7.27.0
-  - ipykernel>=6.4.1
-  - sktime>=0.8.0
-{%- if cookiecutter.prophet == "True" %}
-  - pystan=2.19.1.1
-  - fbprophet=0.7.1
-{%- endif -%}  
+  - python={{cookiecutter.python_version}}

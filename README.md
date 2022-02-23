@@ -107,6 +107,3 @@ The directory structure of your new project looks like this:
 ------------
 
     py.test tests
-
-### TO DO LIST / IDEAS:
-* Implement Poetry

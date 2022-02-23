@@ -29,6 +29,7 @@ dev_packages = [
     "pre-commit",
     "black",
     "isort",
+    "mypy",
 ]
 
 setup(

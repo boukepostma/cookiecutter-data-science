@@ -30,6 +30,7 @@ dev_packages = [
     "black",
     "isort",
     "mypy",
+    "pyarrow",
 ]
 
 setup(
